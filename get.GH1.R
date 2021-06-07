@@ -1,7 +1,0 @@
-get.GH1 <- function(q, lambda, scale_abscissa = sqrt(2), scale_weight=1/sqrt(pi)) {
-  # modified from get.GH function in MMLB package
-  rule = gaussLaguerre(n, a = lambda-1)
- # if(scale_abscissa!=1) rule$x = rule$x*scale_abscissa
- # if(scale_weight!=1)   rule$w = rule$w*scale_weight
-  list(z=rule$x,w=rule$w)
-}
